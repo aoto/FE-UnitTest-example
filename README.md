@@ -61,6 +61,3 @@
 运行`node test-server.js`，浏览器打开`http://localhost:3000/test.html`
 - [生产模式](webpack.production.config.js)
 运行`npm run build`，在build目录下会生成bundle.js
-
-
-
