@@ -1,7 +1,6 @@
-var fetch = require('isomorphic-fetch');
-var expect = require('chai').expect;
+var expect = chai.expect;
 
-describe('异步测试-Promise', function() {
+describe('Promise测试', function() {
   it('Promise返回是否正确', function() {
     return new Promise(function(resolve, reject) {
       setTimeout(function() {
@@ -12,7 +11,7 @@ describe('异步测试-Promise', function() {
     });
   });
 
-  it('异步请求应该返回一个对象', function() {
+  it('Fetch返回是否正确', function() {
     return fetch('https://api.github.com')
       .then(function(res) {
         return res.json();

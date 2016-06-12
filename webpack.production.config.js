@@ -2,10 +2,7 @@ var path = require('path');
 var webpack = require('webpack');
 
 module.exports = {
-  devtool: 'source-map',
   entry: [
-    'webpack-dev-server/client?http://localhost:3000',
-    'webpack/hot/only-dev-server',
     './src/browser/index.js'
   ],
   output: {
@@ -14,7 +11,16 @@ module.exports = {
     publicPath: '/build/' // 发布地址，也就是HTML中引用的地址
   },
   plugins: [
-    new webpack.HotModuleReplacementPlugin()
+    new webpack.optimize.UglifyJsPlugin({
+      compress: {
+        warnings: false
+      }
+    }),
+    new webpack.DefinePlugin({
+      'process.env': {
+        'NODE_ENV': JSON.stringify('production')
+      }
+    })
   ],
   module: {
     loaders: [

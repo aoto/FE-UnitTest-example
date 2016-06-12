@@ -6,11 +6,11 @@ module.exports = {
   entry: [
     'webpack-dev-server/client?http://localhost:3000',
     'webpack/hot/only-dev-server',
-    './src/browser/index.js'
+    'mocha!babel!./test/browser/index.spec.js'
   ],
   output: {
     path: path.join(__dirname, 'build'), // 文件存放地址
-    filename: 'bundle.js',
+    filename: 'test-bundle.js',
     publicPath: '/build/' // 发布地址，也就是HTML中引用的地址
   },
   plugins: [

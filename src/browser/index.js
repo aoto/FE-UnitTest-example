@@ -1,3 +1,5 @@
+import './index.css';
+
 class Hello {
   constructor() {
     this.name = 'hi';
@@ -16,3 +18,5 @@ export default Hello;
 if(module.hot) {
   module.hot.accept();
 }
+
+console.log(2);
