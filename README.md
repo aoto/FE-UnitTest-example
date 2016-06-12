@@ -18,6 +18,3 @@
   - [Promise](test/node/promise.spec.js)
 
 
-
-
-
