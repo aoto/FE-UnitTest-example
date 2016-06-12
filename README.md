@@ -3,7 +3,7 @@
 ## 浏览器端
 - ES5
   - [ES5/jQuery](browser_test/browser/es5.jquery.spec.js)
-  - [Ajax]((browser_test/browser/ajax.spec.js)
+  - [Ajax](browser_test/browser/ajax.spec.js)
 - ES6
   - [ES6](test/browser/index.spec.js)
   - [Promise/Fetch](browser_test/browser/promise.fetch.spec.js)
