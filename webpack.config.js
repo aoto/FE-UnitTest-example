@@ -6,7 +6,7 @@ module.exports = {
   entry: [
     'webpack-dev-server/client?http://localhost:3000',
     'webpack/hot/only-dev-server',
-    './src/browser/index'
+    'mocha!babel!./test/browser/index.spec.js'
   ],
   output: {
     path: path.join(__dirname, 'build'), // 文件存放地址
