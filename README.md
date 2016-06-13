@@ -5,7 +5,8 @@
 - 断言库 [chai](http://chaijs.com/)  
 - 辅助测试库 [sinon](http://sinonjs.org/)  
 - 覆盖率 [istanbul](https://github.com/gotwarlost/istanbul)  
-- 自动化单测 [karma](https://karma-runner.github.io/0.13/index.html)  
+- 自动化单测 [karma](https://karma-runner.github.io/0.13/index.html)
+- 无壳浏览器 [phantomjs](http://phantomjs.org/)  
 - 编译打包工具 [webpack](https://webpack.github.io/)  
 
 ## 运行
@@ -13,18 +14,21 @@
 ### 浏览器端单测
 
 - 无需编译直接运行的情况
-> 浏览器直接打开`browser_test/browser/index.html`
+  - 手工测试  
+  浏览器直接打开`browser_test/browser/index.html`
+  - 自动化测试  
+  运行`npm run auto`，自动在Phantomjs,Chrome,Firefox中执行测试，并输出覆盖率报告
 
 - 需Webpack做打包编译的情况
-  - 浏览器中测试
-  > 运行`node test-server.js`，浏览器打开`http://localhost:3000/test.html`
-  - Node环境测试
-  > 运行`npm test`
+  - 浏览器中测试  
+  运行`node test-server.js`，浏览器打开`http://localhost:3000/test.html`
+  - Node环境测试  
+  运行`npm test`
 
 ### Node端单测
 > 运行`npm test`
 
-### 覆盖率
+### Node端覆盖率
 > 运行`npm run cover`，在`coverage`目录会生成html报告
 
 
