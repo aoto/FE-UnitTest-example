@@ -5,7 +5,8 @@
   "scripts": {
     "build": "rimraf build && cross-env NODE_ENV=production webpack -p --config webpack.production.config.js",
     "test": "mocha --compilers js:babel-core/register --require ignore-styles --recursive -t 5000",
-    "auto": "karma start --single-run",
+    "browser": "karma start",
+    "browser-once": "karma start --single-run",
     "cover": "istanbul cover ./node_modules/mocha/bin/_mocha -- --require ignore-styles --compilers js:babel-core/register --recursive -t 5000"
   },
   "author": "shengjie.yuysj <shengjie.yuysj@alibaba-inc.com>",
