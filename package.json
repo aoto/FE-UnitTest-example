@@ -38,14 +38,14 @@
     "style-loader": "^0.13.1",
     "superagent": "^2.0.0",
     "webpack": "^1.13.1",
-    "webpack-dev-server": "^1.14.1"
-  },
-  "dependencies": {
+    "webpack-dev-server": "^1.14.1",
     "chai": "^3.5.0",
     "istanbul": "^1.0.0-alpha.2",
     "mocha": "^2.5.3",
     "node-fetch": "^1.5.3",
     "sinon": "^1.17.4",
     "whatwg-fetch": "^1.0.0"
+  },
+  "dependencies": {
   }
 }

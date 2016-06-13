@@ -1,18 +1,12 @@
 # 前端单元测试示例/Webpack示例
 
-## 框架/库
-
-### 单测
+## 框架/库/工具
 - 测试框架 [mocha](https://mochajs.org/)  
-![mocha](assets/mocha.png)
 - 断言库 [chai](http://chaijs.com/)  
-![chai](assets/chai.png)
 - 辅助测试库 [sinon](http://sinonjs.org/)  
-![sinon](assets/sinon.png)
-
-### 打包
+- 覆盖率 [istanbul](https://github.com/gotwarlost/istanbul)  
+- 自动化单测 [karma](https://karma-runner.github.io/0.13/index.html)  
 - 编译打包工具 [webpack](https://webpack.github.io/)  
-![Webpack](assets/webpack.png)
 
 ## 运行
 
