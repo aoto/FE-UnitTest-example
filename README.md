@@ -1,4 +1,5 @@
 # 前端单元测试示例/Webpack示例
+> 运行示例前请先在命令行运行`npm install`安装Node模块！
 
 ## 框架/库/工具
 - 测试框架 [mocha](https://mochajs.org/)  
@@ -9,7 +10,7 @@
 - 无壳浏览器 [phantomjs](http://phantomjs.org/)  
 - 编译打包工具 [webpack](https://webpack.github.io/)  
 
-## 运行
+## 运行单测
 
 ### 浏览器端单测
 
