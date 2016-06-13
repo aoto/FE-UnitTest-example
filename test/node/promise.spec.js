@@ -1,4 +1,4 @@
-var fetch = require('isomorphic-fetch');
+var fetch = require('node-fetch');
 var expect = require('chai').expect;
 
 describe('异步测试-Promise', function() {

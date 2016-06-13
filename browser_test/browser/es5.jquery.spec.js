@@ -8,6 +8,6 @@ describe('加法测试', function() {
 
 describe('jQuery测试', function() {
   it('选择器是否正确', function() {
-    expect($('#myid').find('span').length).to.be.equal(2);
+    expect($('body').length).to.be.equal(1);
   });
 });

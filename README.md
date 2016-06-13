@@ -3,38 +3,38 @@
 ## 框架/库
 
 ### 单测
-- 测试框架[mocha](https://mochajs.org/)
+- 测试框架 [mocha](https://mochajs.org/)  
 ![mocha](assets/mocha.png)
-- 断言库[chai](http://chaijs.com/)
+- 断言库 [chai](http://chaijs.com/)  
 ![chai](assets/chai.png)
-- 辅助测试库[sinon](http://sinonjs.org/)
+- 辅助测试库 [sinon](http://sinonjs.org/)  
 ![sinon](assets/sinon.png)
 
 ### 打包
-- 编译打包工具[webpack](https://webpack.github.io/)
+- 编译打包工具 [webpack](https://webpack.github.io/)  
 ![Webpack](assets/webpack.png)
 
 ## 运行
 
 ### 浏览器端单测
 
-#### 无需编译直接运行的情况
-浏览器直接打开`browser_test/browser/index.html`
+- 无需编译直接运行的情况
+> 浏览器直接打开`browser_test/browser/index.html`
 
-#### 需Webpack做打包编译的情况
-- 浏览器中测试
-运行`node test-server.js`，浏览器打开`http://localhost:3000/test.html`
-- Node环境测试
-运行`npm test`
+- 需Webpack做打包编译的情况
+  - 浏览器中测试
+  > 运行`node test-server.js`，浏览器打开`http://localhost:3000/test.html`
+  - Node环境测试
+  > 运行`npm test`
 
 ### Node端单测
-运行`npm test`
+> 运行`npm test`
 
-#### 覆盖率
-运行`npm run cover`，在`coverage`目录会生成html报告
+### 覆盖率
+> 运行`npm run cover`，在`coverage`目录会生成html报告
 
 
-## 单测Case代码
+## 单测Case源码
 
 ### 浏览器端
 - ES5
@@ -55,9 +55,10 @@
 
 ## Webpack配置
 
-- [开发模式](webpack.config.js)
+- [开发模式](webpack.config.js)  
 运行`node dev-server.js`，浏览器打开`http://localhost:3000`
-- [测试模式](webpack.test.config.js)
+- [测试模式](webpack.test.config.js)  
 运行`node test-server.js`，浏览器打开`http://localhost:3000/test.html`
-- [生产模式](webpack.production.config.js)
+- [生产模式](webpack.production.config.js)  
 运行`npm run build`，在build目录下会生成bundle.js
+
