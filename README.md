@@ -1,4 +1,4 @@
-# 前端单元测试/Webpack打包示例
+# 前端单元测试/Webpack构建示例
 > 运行示例前请先在命令行运行`npm install`安装Node模块！
 
 ## 框架/库/工具
@@ -17,8 +17,10 @@
 - 无需编译直接运行的情况
   - 手工测试  
   浏览器直接打开`browser_test/browser/index.html`
-  - 自动化测试  
-  运行`npm run auto`，自动在Phantomjs,Chrome,Firefox中执行测试，并输出覆盖率报告
+  - 运行`npm run browser`  
+  自动进行Phantomjs，Chrome，Firefox的测试，并一直启动着测试进程，修改源文件，自动测试。输出覆盖率报告`coverage_browser`
+  - 运行`npm run browser-once`  
+  进行Phantomjs，Chrome，Firefox的测试。输出覆盖率报告`coverage_browser`
 
 - 需Webpack做打包编译的情况
   - 浏览器中测试  
@@ -31,6 +33,7 @@
 
 ### Node端覆盖率
 > 运行`npm run cover`，在`coverage`目录会生成html报告
+
 
 
 ## 单测Case源码
@@ -52,8 +55,28 @@
   - [ES6](test/node/add.spec-es6.js)
   - [Promise](test/node/promise.spec.js)
 
-## Webpack配置
+## Webpack
+> 未来前端的工程化体系核心
 
+## Features
+1. Plugins
+  - 插件化体系，灵活
+2. Loaders
+  - 支持各种静态资源
+3. Code Splitting
+  - 代码分块，按需加载，性能优秀
+4. Development Tools
+  - 开发服务器，SourceMap，模块热重载
+5. Performance
+  - 异步IO，缓存
+6. Support
+  - AMD, CommonJS, ES6
+7. Optimizations
+  - 压缩，分块，多入口，hash
+8. Multiple targets
+  - Web, WebWorkers, Node
+
+## 示例
 - [开发模式](webpack.config.js)  
 运行`node dev-server.js`，浏览器打开`http://localhost:3000`
 - [测试模式](webpack.test.config.js)  
