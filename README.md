@@ -18,9 +18,9 @@
   - 手工测试  
   浏览器直接打开`browser_test/browser/index.html`
   - 运行`npm run browser`  
-  自动进行Phantomjs，Chrome，Firefox的测试，并一直启动着测试进程，修改源文件，自动测试。输出覆盖率报告`coverage_browser`
+  自动进行Phantomjs，Chrome，Firefox的测试，并一直启动着测试进程，修改源文件，自动测试。输出覆盖率报告到`coverage_browser/Icov-report/index.html`
   - 运行`npm run browser-once`  
-  进行Phantomjs，Chrome，Firefox的测试。输出覆盖率报告`coverage_browser`
+  进行Phantomjs，Chrome，Firefox的测试。输出覆盖率报告到`coverage_browser/Icov-report/index.html`
 
 - 需Webpack做打包编译的情况
   - 浏览器中测试  
@@ -32,7 +32,7 @@
 > 运行`npm test`
 
 ### Node端覆盖率
-> 运行`npm run cover`，在`coverage`目录会生成html报告
+> 运行`npm run cover`，输出覆盖率报告到`coverage/Icov-report/index.html`
 
 
 
