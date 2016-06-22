@@ -13,10 +13,11 @@ class Hello {
 
 export default Hello;
 
+var h = new Hello();
 
 // module hot replacement
 if(module.hot) {
   module.hot.accept();
 }
 
-console.log(2);
+console.log(100);
