@@ -29,10 +29,10 @@
   运行`npm test`
 
 ### Node端单测
-> 运行`npm test`
+运行`npm test`
 
 ### Node端覆盖率
-> 运行`npm run cover`，输出覆盖率报告到`coverage/Icov-report/index.html`
+运行`npm run cover`，输出覆盖率报告到`coverage/Icov-report/index.html`
 
 
 
