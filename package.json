@@ -43,7 +43,7 @@
     "chai": "^3.5.0",
     "istanbul": "^1.0.0-alpha.2",
     "mocha": "^2.5.3",
-    "node-fetch": "^1.5.3",
+    "node-fetch": "^2.6.1",
     "sinon": "^1.17.4",
     "whatwg-fetch": "^1.0.0"
   },
